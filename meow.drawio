@@ -1,0 +1,237 @@
+<mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ==================== CLIENT ==================== -->
+    <mxCell id="2" value="Client (Клиент)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="220" height="200" as="geometry" />
+    </mxCell>
+    <mxCell id="3" value="PK  client_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="26" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="4" value="nickname (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="46" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="5" value="full_name (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="66" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="6" value="phone (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="86" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="7" value="email (EmailField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="106" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="8" value="balance (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="126" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="9" value="status (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="146" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="10" value="registration_date (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;" vertex="1" parent="2">
+      <mxGeometry y="166" width="220" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== COMPUTER ==================== -->
+    <mxCell id="20" value="Computer (Компьютер)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="560" y="40" width="240" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="21" value="PK  computer_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="26" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="22" value="name (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="46" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="23" value="zone (CharField: VIP/Standard)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="66" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="24" value="cpu (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="86" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="25" value="gpu (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="106" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="26" value="ram (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="126" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="27" value="status (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="146" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="28" value="hourly_rate (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="166" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="29" value="FK  tariff_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="20">
+      <mxGeometry y="186" width="240" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== TARIFF ==================== -->
+    <mxCell id="40" value="Tariff (Тариф)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="40" width="220" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="41" value="PK  tariff_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="26" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="42" value="name (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="46" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="43" value="description (TextField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="66" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="44" value="price_per_hour (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="86" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="45" value="package_hours (IntegerField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="106" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="46" value="is_active (BooleanField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="126" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="47" value="tariff_type (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="40">
+      <mxGeometry y="146" width="220" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== SESSION ==================== -->
+    <mxCell id="60" value="Session (Игровая сессия)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+      <mxGeometry x="320" y="360" width="260" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="61" value="PK  session_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="26" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="62" value="FK  client_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="46" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="63" value="FK  computer_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="66" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="64" value="FK  tariff_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="86" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="65" value="start_time (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="106" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="66" value="end_time (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="126" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="67" value="duration_minutes (IntegerField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="146" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="68" value="total_cost (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="166" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="69" value="status (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="60">
+      <mxGeometry y="186" width="260" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== PAYMENT ==================== -->
+    <mxCell id="80" value="Payment (Платёж)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="680" width="240" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="81" value="PK  payment_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="26" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="82" value="FK  client_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="46" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="83" value="FK  session_id (ForeignKey, null=True)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="66" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="84" value="amount (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="86" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="85" value="payment_method (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="106" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="86" value="payment_type (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="126" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="87" value="created_at (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="80">
+      <mxGeometry y="146" width="240" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== SERVICE ==================== -->
+    <mxCell id="100" value="Service (Услуга)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="560" y="680" width="220" height="160" as="geometry" />
+    </mxCell>
+    <mxCell id="101" value="PK  service_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="100">
+      <mxGeometry y="26" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="102" value="name (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="100">
+      <mxGeometry y="46" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="103" value="category (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="100">
+      <mxGeometry y="66" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="104" value="price (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="100">
+      <mxGeometry y="86" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="105" value="is_active (BooleanField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="100">
+      <mxGeometry y="106" width="220" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== SESSION_SERVICE ==================== -->
+    <mxCell id="120" value="SessionService (Заказ услуги)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="900" y="680" width="240" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="121" value="PK  id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="120">
+      <mxGeometry y="26" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="122" value="FK  session_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="120">
+      <mxGeometry y="46" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="123" value="FK  service_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="120">
+      <mxGeometry y="66" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="124" value="quantity (IntegerField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="120">
+      <mxGeometry y="86" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="125" value="total_price (DecimalField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="120">
+      <mxGeometry y="106" width="240" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== BOOKING ==================== -->
+    <mxCell id="140" value="Booking (Бронирование)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="360" width="240" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="141" value="PK  booking_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="26" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="142" value="FK  client_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="46" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="143" value="FK  computer_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="66" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="144" value="start_time (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="86" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="145" value="end_time (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="106" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="146" value="status (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="126" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="147" value="created_at (DateTimeField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="140">
+      <mxGeometry y="146" width="240" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== DEVICE ==================== -->
+    <mxCell id="160" value="Device (Устройство)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="680" width="220" height="160" as="geometry" />
+    </mxCell>
+    <mxCell id="161" value="PK  device_id (AutoField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="160">
+      <mxGeometry y="26" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="162" value="FK  computer_id (ForeignKey)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="160">
+      <mxGeometry y="46" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="163" value="device_type (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="160">
+      <mxGeometry y="66" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="164" value="model (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="160">
+      <mxGeometry y="86" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="165" value="status (CharField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="160">
+      <mxGeometry y="106" width="220" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="166" value="purchase_date (DateField)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;fontColor=#000000;" vertex="1" parent="160">
+      <mxGeometry y="126" width="220" height="20"
